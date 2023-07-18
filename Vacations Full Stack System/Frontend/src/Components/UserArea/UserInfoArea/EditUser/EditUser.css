@@ -1,0 +1,47 @@
+.EditUser h2 {
+  color: dark-blue;
+  font-size: headline;
+  border-bottom: 2px solid dark-blue;
+  width: 20%;
+  padding-bottom: 1em;
+  margin: 1em auto;
+}
+.EditUser > a .gold-btn {
+  width: 20%;
+}
+.EditUser > a .gold-btn:hover {
+  background-color: gold;
+  color: light-text;
+}
+.EditUser form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 19em;
+  text-align: left;
+  margin: 0 auto;
+}
+.EditUser form input {
+  height: 2em;
+  text-align: center;
+  margin: 1em 0;
+  background-color: main-bg;
+  border: 1px solid dark-bg;
+}
+.EditUser form input:focus {
+  outline: none;
+  border: 1px solid gold;
+}
+.EditUser form label {
+  font-size: small-text;
+  color: secondary-text;
+}
+.EditUser form button {
+  width: 100%;
+  margin-top: 1em;
+}
+.EditUser form button:hover {
+  color: light-text;
+  background-color: dark-blue;
+  border: none;
+}

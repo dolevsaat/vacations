@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "bfc0c210-da64-43c4-952f-8776fdd68cce",
+		"name": "Vacations REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Yehudadolev\",\r\n    \"lastName\": \"Saatdolev\",\r\n    \"email\": \"Dolevsaat77889848542@gmail.com\",\r\n    \"password\": \"Yehuda98855\",\r\n    \"roleId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Dolevsaat77889848542@gmail.com\",\r\n    \"password\": \"Yehuda98855\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get, Add, Update, Delete vacations API",
+			"item": [
+				{
+					"name": "Get all vacations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all vacations by userID Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations-by-userId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations-by-userId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single vacations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add vacation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"DoubleTree by Hilton Las Vegas East yehuda\",\r\n    \"description\": \"Take advantage of recreational opportunities offered, including an outdoor pool, a spa tub, and a 24-hour fitness center.Enjoy a meal at the restaurante.Stay in one of 129 guestrooms featuring LCD televisions. Your pillowtop bed comes with premium bedding.\",\r\n    \"dateStart\": \"09/07/2023\",\r\n    \"dateEnd\": \"11/08/2023\",\r\n    \"price\": 449,\r\n    \"imageUrl\": \"9a129207-870a-4310-94bd-a391f8941uyj.jpg\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/vacations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update vacation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vacationId\": 24,\r\n    \"name\": \"DoubleTree by Hilton Las Vegas East saat\",\r\n    \"description\": \"Take advantage of recreational opportunities offered, including an outdoor pool, a spa tub, and a 24-hour fitness center.Enjoy a meal at the restaurante.Stay in one of 129 guestrooms featuring LCD televisions. Your pillowtop bed comes with premium bedding.\",\r\n    \"dateStart\": \"09/07/2023\",\r\n    \"dateEnd\": \"11/08/2023\",\r\n    \"price\": 449,\r\n    \"imageUrl\": \"9a129207-870a-4310-94bd-a391f8941uyj.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/edit/24",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"edit",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete vacation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/images/9a129207-870a-4310-94bd-a391f8941e9e.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"images",
+								"9a129207-870a-4310-94bd-a391f8941e9e.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get, Add, Delete followers API",
+			"item": [
+				{
+					"name": "Get all followers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/followers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"followers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all followers by userID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/followers/by-user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"followers",
+								"by-user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get followers by vacationId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/followers/by-vacation/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"followers",
+								"by-vacation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add follower",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"vacationId\": 13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/followers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"followers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete follower",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/followers/delete?vacationId=21&userId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"followers",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "vacationId",
+									"value": "21"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,6 @@
+.Spinner > img {
+  width: 450px;
+  margin-top: 30px;
+  border-radius: 25px;
+  box-shadow: 5px 10px black;
+}

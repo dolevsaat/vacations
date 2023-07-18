@@ -1,0 +1,31 @@
+.AdminFollowers {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 9;
+  width: 50%;
+  display: flex;
+  border-radius: 50px;
+  padding: 0.5em;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 1s;
+}
+.AdminFollowers:hover {
+  background-color: blue;
+  transition: 1s;
+}
+.AdminFollowers .followers-wrapper {
+  display: contents;
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: darkblue;
+  color: black;
+  font-size: large;
+}
+.AdminFollowers .followers-wrapper span:last-of-type {
+  font-weight: 600;
+  margin-left: 0.5em;
+}

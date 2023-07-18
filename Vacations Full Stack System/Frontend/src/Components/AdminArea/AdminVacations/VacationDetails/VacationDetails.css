@@ -1,0 +1,35 @@
+.VacationDetails {
+  width: fit-content;
+  margin: auto;
+}
+
+.VacationDetails {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+  font-family: "Molengo", sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  width: 23rem;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  height: 583px;
+  overflow: auto;
+}
+
+.VacationDetails h3 {
+  font-size: large;
+  gap: 10px;
+}
+
+.VacationDetails img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.VacationDetails > div:last-child {
+  margin-left: auto;
+}

@@ -1,0 +1,136 @@
+.FilterMenu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  width: 15%;
+  height: 100%;
+}
+.FilterMenu h2 {
+  color: darkturquoise;
+  padding-bottom: 0.5em;
+  border-bottom: 1.5px solid darkturquoise;
+  width: 100%;
+}
+.FilterMenu small {
+  margin-bottom: 0.8em;
+  text-align: left;
+  font-size: 18px;
+}
+.FilterMenu .price-range {
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: left;
+}
+.FilterMenu .price-range input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 100%;
+  background-color: gold;
+  border-radius: 5px;
+  outline: none;
+}
+.FilterMenu .price-range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: darkturquoise;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.FilterMenu .price-range input[type="range"]::-webkit-slider-thumb:active {
+  background-color: gold;
+  border: 5px solid darkturquoise;
+}
+.FilterMenu .price-range span {
+  font-size: 14px;
+}
+.FilterMenu .slider {
+  width: 100%;
+  height: 1.5em;
+  position: relative;
+}
+.FilterMenu .checkbox-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+.FilterMenu .checkbox-wrapper .switch {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 3em;
+  margin-right: 1em;
+}
+.FilterMenu .checkbox-wrapper .switch input {
+  display: none;
+}
+.FilterMenu .checkbox-wrapper .slider {
+  background-color: darkturquoise;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.FilterMenu .checkbox-wrapper .slider:before {
+  background-color: #fff;
+  bottom: 6px;
+  content: "";
+  height: 1em;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 1em;
+}
+.FilterMenu .checkbox-wrapper input:checked + .slider {
+  background-color: gold;
+  width: 55px;
+}
+.FilterMenu .checkbox-wrapper input:checked + .slider:before {
+  transform: translateX(80%);
+}
+.FilterMenu .checkbox-wrapper .slider.round {
+  border-radius: 34px;
+  width: 55px;
+}
+.FilterMenu .checkbox-wrapper .slider.round:before {
+  border-radius: 50%;
+}
+.FilterMenu select {
+  width: 100%;
+  height: 2.5em;
+  text-align: center;
+  border: 1px solid black;
+  background-color: gold;
+  color: dark-blue;
+}
+.FilterMenu select option {
+  background-color: secondary-bg;
+  color: gold;
+}
+.FilterMenu button {
+  margin-top: 2em;
+}
+.FilterMenu button:hover {
+  color: lightskyblue;
+  background-color: darkturquoise;
+  border: none;
+  color: #000;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn {
+  background-color: gold;
+  border: none;
+  color: #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+}

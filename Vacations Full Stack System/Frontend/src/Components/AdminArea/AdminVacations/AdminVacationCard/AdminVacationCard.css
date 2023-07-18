@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Molengo&display=swap");
+
+.AdminVacationCard .card {
+  text-align: left;
+  color: black;
+  font-family: "Molengo", sans-serif;
+  font-size: large;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  margin-top: 35px;
+  height: 560px;
+}
+
+.more-details {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #ffffff94;
+  padding: 2px 12px;
+  border-radius: 15px;
+}
+.more-details:hover {
+  background-color: #ffffff;
+}
+
+.AdminVacationCard .card-title {
+  font-size: 30px;
+}
+.card-footer {
+  margin: 20px 0;
+}
+
+.AdminVacationCard .card-text {
+  margin-bottom: 0;
+  height: 160px;
+  overflow: scroll;
+}
+
+.AdminVacationCard img {
+  height: 170px;
+}
+
+.AdminVacationCard i {
+  border: 1px solid gray;
+  padding: 4px 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ffffffc2;
+}
+
+.AdminVacationCard .vacationPrice {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  width: auto;
+  height: 38px;
+  background-color: #3e8dd6;
+  -webkit-border-radius: 3px 4px 4px 3px;
+  -moz-border-radius: 3px 4px 4px 3px;
+  border-radius: 3px 4px 4px 3px;
+  border-left: 1px solid #3e8dd6;
+  /* This makes room for the triangle */
+  margin-left: 19px;
+  position: absolute;
+  color: white;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 38px;
+  padding: 0 10px 0 10px;
+  top: calc(193px - 38px - 5px);
+  right: 2px;
+}
+
+/* Makes the triangle */
+
+.AdminVacationCard .vacationPrice:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -19px;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-right: 19px solid #3e8dd6;
+}
+
+/* Makes the circle */
+
+.AdminVacationCard .vacationPrice:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: -9px;
+  top: 17px;
+}

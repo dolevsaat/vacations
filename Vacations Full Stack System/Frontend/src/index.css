@@ -1,0 +1,16 @@
+html,
+body,
+#root {
+  height: 100%;
+  text-align: center;
+  font-size: x-large;
+  background-color: aliceblue;
+}
+
+a {
+  color: rgb(28, 104, 131);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(187, 82, 20);
+}

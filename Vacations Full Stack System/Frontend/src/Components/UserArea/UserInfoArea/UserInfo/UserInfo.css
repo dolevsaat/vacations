@@ -1,0 +1,17 @@
+.UserInfo a {
+  margin: 0;
+}
+.UserInfo .gold-btn:hover {
+  background-color: gold;
+  color: light-text;
+  box-shadow: 2px 2px 3px rgba(0, 1, 0);
+}
+.UserInfo .blue-btn {
+  width: 10em;
+  margin-left: 1em;
+}
+.UserInfo .blue-btn:hover {
+  background-color: dark-blue;
+  color: light-text;
+  box-shadow: 2px 2px 3px rgba(0, 1, 0);
+}

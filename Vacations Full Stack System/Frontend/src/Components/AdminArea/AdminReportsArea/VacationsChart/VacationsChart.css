@@ -1,0 +1,58 @@
+.vacations-chart {
+  border-top: 2px solid gold;
+  position: relative;
+  height: 50vh;
+  padding-top: 5em;
+}
+
+.vacations-chart .text-two {
+  fill: gold;
+}
+
+.vacations-chart .text-one {
+  fill: gold;
+}
+
+.vacations-chart .sector-one {
+  fill: gold;
+}
+
+.vacations-chart .main-pie {
+  fill: dark-blue;
+}
+
+.vacations-chart .pie-line {
+  stroke: gold;
+}
+
+.vacations-chart .recharts-responsive-container {
+  width: 30em !important;
+  height: 300px;
+  min-width: 0px;
+  margin: 0 auto;
+}
+
+.vacations-chart table {
+  text-align: left;
+  border: 1px solid gold;
+  margin: 2em auto;
+  border-collapse: collapse;
+}
+
+.vacations-chart table td {
+  border-bottom: 1px solid gold;
+  padding: 1em;
+}
+
+.vacations-chart table th {
+  font-size: regular-text;
+  background-color: gold;
+  color: light-text;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1460px) {
+  .vacations-chart {
+    height: 70vh;
+  }
+}

@@ -1,0 +1,22 @@
+.Followers {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+}
+.Followers button {
+  border: none;
+  border-radius: 5px;
+  padding: 3px 12px;
+}
+.Followers button:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+.Followers button:hover svg path {
+  fill: #ffffff;
+}
+
+.Followers button span {
+  margin-left: 5px;
+}

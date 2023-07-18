@@ -1,0 +1,12 @@
+.PageNotFound > img {
+  width: 500px;
+  border-radius: 35px;
+  border: 1px solid black;
+  box-shadow: 15px 10px 15px black;
+}
+
+.PageNotFound > p {
+  font-family: "Courier New", Courier, monospace;
+  color: aqua;
+  line-height: 2px;
+}

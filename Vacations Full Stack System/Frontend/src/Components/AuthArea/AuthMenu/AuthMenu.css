@@ -1,0 +1,24 @@
+.AuthMenu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.AuthMenu {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+
+.AuthMenu hr {
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+}
+
+.AuthMenu a {
+  color: #fff;
+  margin: 0 5px;
+}
+
+.AuthMenu a:hover {
+  color: #fff;
+}
